@@ -1,0 +1,1 @@
+In Next.js 15, the App Router's `fetch` calls might not behave as expected within a `useEffect` hook.  If the `fetch` call happens within a component that re-renders frequently, you could see unexpected behavior like repeated fetches or stale data. This is because `useEffect` runs after every render, triggering the `fetch` call unnecessarily.
